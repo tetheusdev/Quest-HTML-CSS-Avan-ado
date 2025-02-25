@@ -1,4 +1,4 @@
-@media (max-width: 430px) {
+@media (max-width: 375px) {
     body {
         background: url(../images/bg-mobile.svg) no-repeat var(--cor-primaria);
         background-size: contain;
