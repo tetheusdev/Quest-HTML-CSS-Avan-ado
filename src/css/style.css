@@ -1,0 +1,130 @@
+body {
+    font-family: "Poppins", "Open Sans", serif;
+    background: url(../images/bg-desktop.svg) center no-repeat var(--cor-primaria);
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header ."
+                        "sections about"
+                        ". footer";
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: flex-end;
+}
+
+.header .logo {
+    grid-row: 2;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.header .logo img {
+    width: 80%;
+}
+
+/* SECTION */
+
+.sections {
+    grid-area: sections;
+    justify-items: end;
+}
+
+/* ABOUT */
+.about {
+    grid-area: about;
+    justify-items: start;
+    margin: 45px;
+}
+
+.about .about-info h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+.about .about-info {
+    font-family: "Open Sans";
+    color: #fff;
+    width: 500px;
+}
+
+.about .btn-section {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin-top: 35px;
+    padding: 18px 65px;
+    border-radius: 40px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.about .btn-section:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-icon .fa-brands {
+    margin: 5px;
+}
+
+.footer .footer-icon .fa-facebook-f {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    padding: 15px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-icon .fa-twitter {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    padding: 15px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-icon .fa-instagram {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    padding: 15px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-icon .fa-facebook-f:hover,
+.footer .footer-icon .fa-twitter:hover,
+.footer .footer-icon .fa-instagram:hover {
+    color: var(--cor-secundaria);
+    border: 1px var(--cor-secundaria) solid;
+    cursor: pointer;
+}
